@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidiebere oguguo Tm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .banner{
+            background-image: url(aa.jpg);
+            background-position: center;
+            height:800px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 30px;
+        }
+        .navbar .logo {
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar ul li {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: black; 
+        }
+        .navbar ul li a:hover{
+            text-decoration: none;
+            color: black;
+            color: red;
+        
+        }
+        .navbar .subscribe-btn {
+            background-color: white;
+            color: black;
+            padding: 8px 16px;
+            border: 2px solid black;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        .navbar .subscribe-btn:hover {
+            background-color: red;
+        }  
+        .headertext{
+            margin-left: 30px;
+            width: 500px;
+
+        }  
+      h1{
+            margin-top: 200px;
+            color: #fff;
+            font-size:50px;
+            text-align: center;
+           
+      }
+        .searchinput{
+            background-color : #fff;
+            display: flex;
+            height: 35px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        input{
+            height:20px;
+            gap: 10px;
+            width:80%;
+            border:1px solid aqua;
+            height: 30px;
+        
+
+        }
+        .headertext button{
+            width: 20%;
+            color:#fff;
+            background-color: aqua;
+            border: none;
+            outline: none;
+        }
+        .Aboutus{
+             border: 1px solid black;
+             padding: 100px 50px;
+             
+        } 
+        .Aboutus .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Aboutus img{
+        width:100%;
+        height:100%;
+        }
+       .Aboutus h2{
+        font-size: 35px;
+        text-align: center;
+       }
+       .box1{
+       
+        flex-basis: 60%;
+        height:500px;
+       }
+       .box2{
+        flex-basis:40%;
+       }
+       .btncon button{
+      background-color:  #009999  ;
+        color: #fff;
+        padding: 6px;
+        border:none;
+       }
+       .Aboutus h3{
+        color:#009999;
+        font-size: 30px;
+        text-transform: capitalize;
+        text-align: left;
+        margin-bottom: 19px;
+       }
+       .btncon button:hover{
+        background-color: white;
+        color:#009999;
+        border:1px solid #009999;
+        cursor: pointer;
+       }
+       .feature{
+        padding:50px;
+       }
+
+       .gallerysection{
+        padding: 50px;
+       }
+
+    .feature .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid white;
+    }
+    .feature .row .card{
+        width:30%;
+        border: 1px solid black;
+        
+    }
+    .feature .row .card img{
+        width:100%;
+    }
+
+   /* .featuresection .row {
+        display: flex;
+        
+       } 
+       .row .card{
+        flex-basis: 30%;
+       }
+       .row .card img{
+        width: 100%;
+       } */
+       
+       p{
+        color: gray;
+        padding-left:10px ;
+        padding-right:100px ;
+        text-align: center;
+       }
+
+        .button{
+        align-items: center;
+        background-color: #009999;
+        color: #fff;
+       }
+       .title{
+       color: #009999;
+       text-align: center;
+    }
+    .gallerysection .row1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gallerysection .row1 div{
+        flex-basis:30%;
+    }
+    .gallerysection .row1 div img{
+        width:100%;
+    }
+    .gallerysection .row1 div:nth-child(1){
+        margin-bottom:30px;
+    }
+    
+    .gallerysection h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+    }
+    .contactus .row h2{
+       text-align: center;
+    }
+    
+    .contactus{
+        background-color:aqua;
+        margin-top:20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .contactus h2{
+        color: #fff;
+        font-size:45px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contactus .row{
+        display: flex;
+        align-items: center;
+    }
+    .contactus .row .textbox{
+        flex:1.7;
+        
+    }
+    .contactus .row form{
+        flex:1;
+        
+    }
+    .contactus .row .textbox h1{
+        font-size:60px;
+        color:white;
+    }
+    .contactus .row form{
+        background-color: #fff;
+        padding:30px;
+        border-radius:10px;
+    }
+    .contactus .row form div label{
+        display: block;
+        color: #009999;
+        font-size: 18px;
+        margin-bottom:10px;
+    }
+    .contactus .row form div input{
+        display: block;
+        width:100%;
+        height:35px;
+        border-radius:4px;
+        background-color: #eee;
+        padding-right:10px;
+        padding-left: 10px;
+        border:none;
+    }
+    form div{
+        margin-bottom:10px;
+    }
+    form textarea{
+        width:100%;
+    }
+    button{
+        background-color: #009999;
+        color: #fff;
+        width: 100%;
+        height:30px;
+        /* border:none; */
+        /* margin-top:10px; */
+        font-size: 14px;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    footer{
+        margin-top: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    footer i{
+        border:1px solid #009999;
+        padding-left:10px;
+        padding-top: 10px;
+        padding-right:10px;
+        padding-bottom:10px;
+        border-radius:50px;
+        margin-right:10px;
+        margin-top:10px;
+    }
+    .social{
+        text-align: center;
+    }
+  h2{
+    text-align: center;
+  }
+
+    </style>
+</head>
+<body >
+   
+
+    <div class="feature" id="feature"> 
+        <div class="row">
+            <div class="card">
+                <img src="../project 2/images/featued-img-2.jpg" alt=""><h2>A starry night</h2>
+                <p>Look at the night sky and falling yourself Immersed in the amazing moutain range of aspen.</p>
+                <button>Explore</button>
+            </div>
+            <div class="card">
+                <img src="../project 2/images/gallery-img-4.jpg" alt=""><h2>Misty mornings</h2>
+                <p>Capture the stnning essence of the early morning sunrise in the Californaian Wilderness.</p>
+                <button>Explore</button>
+            </div>
+            <div class="card">
+                <img src="../project 2/images/featued-img-2.jpg" alt=""><h2>Utah sunsets</h2>
+                <p>Sunset over the stunning Utah Canyonlands, is truly something much more than incredible.x</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+  <footer>
+    <hr>
+        <p>Author Curtis Lee-Distributed By Codepel</p>
+    </footer>  
+
+</body>
+</html>
